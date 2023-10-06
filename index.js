@@ -3,6 +3,12 @@ module.exports = {
   generateImageContainer: require("./generateImageContainer"),
 };
 
+/**
+ * @author Jinal Tandel
+ * @description For display the explanations of the image
+ * @param {*} event
+ * @param {*} id
+ */
 function displayData(event, id) {
   document.addEventListener("DOMContentLoaded", () => {
     const target = document.getElementById(id);
@@ -19,6 +25,15 @@ function displayData(event, id) {
     });
   });
 }
+
+/**
+ * @author Jinal Tandel
+ * @description create the HTML of image container with explanations data
+ * @param {*} explanations
+ * @param {*} imagePath
+ * @param {*} imageId
+ * @returns containerHTML
+ */
 function generateImageContainer(explanations, imagePath, imageId) {
   let count = 1;
   const container = document.createElement("div");
@@ -71,6 +86,7 @@ function generateImageContainer(explanations, imagePath, imageId) {
   return container.outerHTML;
 }
 
+//For converting string from camelcase to Kebab
 function camelToKebab(camelCaseString) {
   return camelCaseString.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
 }
