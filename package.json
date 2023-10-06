@@ -1,0 +1,19 @@
+{
+  "name": "product-preview",
+  "version": "1.0.0",
+  "description": "'Easy-to-use functions for UI interactivity and image container generation.'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JenuTandel/ProductPreview_Library.git"
+  },
+  "author": "Jinal Tandel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JenuTandel/ProductPreview_Library/issues"
+  },
+  "homepage": "https://github.com/JenuTandel/ProductPreview_Library#readme"
+}
